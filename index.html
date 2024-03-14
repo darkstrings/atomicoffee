@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <script src="js/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A new way to grind coffee" />
+
+    <link rel="icon" href="img/atomicoffee-favicon-color.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <title>Welcome to AtomiCoffee</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#"><img class="logo" src="img/nav-logo.webp"></a>
+
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a class="nav-link" href="#how">How it works</a></li>
+                <li><a class="nav-link" href="#about-features">About</a></li>
+                <li><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                <li><a class="btn cta-btn" href="#cta">Try Today</a></li>
+            </ul>
+        </nav>
+
+        <button class="btn-mobile-nav" onclick="toggleNav()">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="section-hero">
+            <div class="hero-img-box"><img class="hero-img box-green-glow" src="img/hero-img.webp" alt="">
+            </div>
+            <div class="hero-text-box">
+                <h1 class="heading-primary">Welcome to AtomiCoffee, where we're powering your daily grind!</h1>
+                <p class="hero-text">At AtomiCoffee, we're revolutionizing the coffee industry with our
+                    plutonium-powered coffee grinders. Experience the
+                    perfect blend of tradition, technology and flavor that buries the needle with every cup. </p>
+                <div class="hero-links"><a href="#cta" class="btn margin-right cta-btn">Order Today</a>
+                    <a href="#about-features" class="btn non-cta-btn">More Info</a>
+                </div>
+
+                <div class="num-ordered">
+                    <div class="ordered-imgs">
+                        <img src="img/gallery/ordered/cust1-ordered.webp" alt="Customer portrait">
+                        <img src="img/gallery/ordered/cust2-ordered.webp" alt="Customer portrait">
+                        <img src="img/gallery/ordered/cust3-ordered.webp" alt="Customer portrait">
+                        <img src="img/gallery/ordered/cust4-ordered.webp" alt="Customer portrait">
+                        <img src="img/gallery/ordered/cust5-ordered.webp" alt="Customer portrait">
+                        <img src="img/gallery/ordered/cust6-ordered.webp" alt="Customer portrait">
+                    </div>
+                    <p><span class="text-highlight">1000+</span> already ordered since our launch last year!</p>
+                </div>
+
+            </div>
+        </section>
+        <!-- FEATURED IN -->
+        <section class="section-featured-in">
+            <div class="container">
+
+                <h2 class="featured-in-heading">As featured in:</h2>
+                <div class="logos">
+                    <img src="img/logos/business-insider.webp" alt="Business Insider Logo" class="mag-logo">
+                    <img src="img/logos/forbes.webp" alt="Forbes Magazine Logo" class="mag-logo">
+                    <img src="img/logos/techcrunch.webp" alt="Techcrunch Logo" class="mag-logo">
+                    <img src="img/logos/wired-logo.webp" alt="Wired Logo" class="mag-logo">
+                    <img src="img/logos/engadget-logo.webp" alt="cnet Logo" class="mag-logo">
+                </div>
+
+            </div>
+        </section>
+        <!-- SECTION HOW -->
+        <section class="section-how" id="how">
+            <div class="container">
+                <span class="subheading">How it works</span>
+                <h2 class="heading-secondary">Reimagine your morning in 4 easy steps</h2>
+            </div>
+            <div class="container grid grid-2-cols how-steps">
+                <!-- STEP 1 -->
+                <div class="step-text">
+                    <p class="step-num text-green-glow">1</p>
+                    <h3 class="heading-tertiary">Insert Coffee Beans:</h3>
+                    <p class="step-desc">Pour your favorite coffee beans into the grinder's hopper.</p>
+                </div>
+                <div class="step-img-box">
+                    <img class="step-img box-green-glow" src="img/beans.webp" alt="">
+                </div>
+                <!-- STEP 2 -->
+                <div class="step-img-box">
+                    <img class="step-img box-green-glow" src="img/knob.webp" alt="">
+                </div>
+                <div class="step-text">
+                    <p class="step-num text-green-glow">2</p>
+                    <h3 class="heading-tertiary">Adjust Settings:</h3>
+                    <p class="step-desc">Choose your preferred grind size and strength.</p>
+                </div>
+                <!-- STEP 3 -->
+                <div class="step-text">
+                    <p class="step-num text-green-glow">3</p>
+                    <h3 class="heading-tertiary">Press Start:</h3>
+                    <p class="step-desc">Activate the grinder and watch as it transforms your beans into the perfect
+                        grind.</p>
+                </div>
+                <div class="step-img-box">
+                    <img class="step-img box-green-glow" src="img/running.webp" alt="">
+                </div>
+                <!-- STEP 4 -->
+                <div class="step-img-box">
+                    <img class="step-img box-green-glow" src="img/mug.webp" alt="">
+                </div>
+                <div class="step-text">
+                    <p class="step-num text-green-glow">4</p>
+                    <h3 class="heading-tertiary">Enjoy:</h3>
+                    <p class="step-desc">Brew your freshly ground coffee and savor the rich flavors and aromas.</p>
+                </div>
+            </div>
+
+        </section>
+        <!-- FEATURES -->
+        <section class="section-features" id="about-features">
+            <div class="container">
+                <span class="subheading">Features</span>
+                <h2 class="heading-secondary">What sets us apart</h2>
+                <p class="about-text">We're not just another coffee grinder manufacturer. We're
+                    pioneers, dreamers, and coffee enthusiasts on a mission to redefine the coffee experience. Our
+                    plutonium-powered
+                    coffee grinders embody our commitment to innovation, sustainability, and quality.</p>
+            </div>
+            <div class="grid grid-4-cols container features">
+
+                <div class="feature-box">
+                    <ion-icon class="feature-icon" name="flash-outline"></ion-icon>
+                    <h3 class="heading-tertiary">Plutonium Power</h3>
+                    <p class="feature-text">Grind anywhere! Experience consistent and efficient grinding with our
+                        revolutionary plutonium power source. No plugs
+                        needed!</p>
+                </div>
+                <div class="feature-box">
+                    <ion-icon class="feature-icon" name="brush-outline"></ion-icon>
+                    <h3 class="heading-tertiary">Sleek Design</h3>
+                    <p class="feature-text">Our grinders feature a modern, sophisticated design that enhances any
+                        kitchen
+                        space.</p>
+                </div>
+                <div class="feature-box">
+                    <ion-icon class="feature-icon" name="thumbs-up-outline"></ion-icon>
+                    <h3 class="heading-tertiary">User-Friendly</h3>
+                    <p class="feature-text">Intuitive controls make grinding your favorite beans a breeze.</p>
+                </div>
+                <div class="feature-box">
+                    <ion-icon class="feature-icon" name="build-outline"></ion-icon>
+                    <h3 class="heading-tertiary">Durable Construction</h3>
+                    <p class="feature-text">Built to last, our grinders withstand the test of time. Coffee grinders with
+                        radiation leaks are
+                        now a thing of the
+                        past!</p>
+                </div>
+            </div>
+
+
+            </div>
+            <div class="container">
+                <blockquote class="about-text ceo-quote-box"><span class="ceo-quote-text text-green-glow">"We strive to
+                        revolutionize the way coffee is ground and brewed, empowering coffee lovers worldwide with
+                        unparalleled technology and eco-conscious practices." - Michael J
+                        Chairnoble. (Founder and CEO)</span> </blockquote>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS / GALLERY -->
+
+        <section class="section-testimonials container" id="testimonials">
+            <div class="testimonials-heading container ">
+                <span class="subheading">Testimonials</span>
+                <h2 class="heading-secondary">Splitting beans by splitting atoms.</h2>
+            </div>
+            <div class="testimonials-gallery">
+                <div class="testimonials-container">
+
+                    <div class="testimonials">
+
+                        <figure class="testimonial">
+                            <img src="img/gallery/cust1.webp" class="testimonial-img" alt="Photo of customer John D.">
+                            <blockquote class="testimonial-text">As a coffee aficionado, I'm impressed by the precision
+                                and consistency of Atomicoffee's grinder. It's a game-changer!</blockquote>
+                            <p class="testimonial-name">&mdash; John D.</p>
+                        </figure>
+
+                        <figure class="testimonial">
+                            <img src="img/gallery/cust2.webp" class="testimonial-img" alt="Photo of customer Sarah L">
+                            <blockquote class="testimonial-text">Atomicoffee's grinder has revolutionized my morning
+                                routine.
+                                The convenience and quality it offers are unmatched!</blockquote>
+                            <p class="testimonial-name">&mdash; Sarah L.</p>
+                        </figure>
+
+                        <figure class="testimonial">
+                            <img src="img/gallery/cust6.webp" class="testimonial-img" alt="Photo of customer Emily M.">
+                            <blockquote class="testimonial-text">I never knew grinding coffee could be so enjoyable
+                                until I tried Atomicoffee's grinder. It's become an essential part of
+                                my daily ritual.</blockquote>
+                            <p class="testimonial-name">&mdash; Emily M.</p>
+                        </figure>
+
+                        <figure class="testimonial">
+                            <img src="img/gallery/cust5.webp" class="testimonial-img" alt="Photo of customer Sarah L">
+                            <blockquote class="testimonial-text">Atomicoffee's grinder not only delivers exceptional
+                                performance but also adds a touch of elegance to my kitchen
+                                countertop. Highly recommended!</blockquote>
+                            <p class="testimonial-name">&mdash; Michael H.</p>
+                        </figure>
+                    </div>
+                </div>
+                <div class="gallery">
+
+                    <figure class="gallery-item">
+                        <img src="img/gallery/cust2.webp" alt="Gallery image of a person with coffee">
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="img/gallery/radsuit8.webp" alt="Gallery image of a person with coffee">
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="img/gallery/cust4.webp" alt="Gallery image of a person with coffee">
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="img/gallery/cust6.webp" alt="Gallery image of a person with coffee">
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="img/gallery/radsuit3.webp" alt="Gallery image of a person with coffee">
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="img/gallery/radsuit4.webp" alt="Gallery image of a person with coffee">
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="img/gallery/cust1.webp" alt="Gallery image of a person with coffee">
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="img/gallery/cust5.webp" alt="Gallery image of a person with coffee">
+                    </figure>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section-cta" id="cta">
+            <div class="container">
+                <div class="cta">
+                    <div class="cta-text-box">
+                        <h2 class="heading-secondary">Experience the future of coffee</h2>
+                        <p class="cta-text">Order yours today and don't forget to subscribe to our newsletter to be the
+                            first to know about our upcoming products, exclusive offers and more!</p>
+
+                        <form class="grid cta-form" action="#">
+                            <div>
+                                <label for="name">Full Name</label>
+                                <input class="form-input" id="name" type="text" placeholder="Name">
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input class="form-input" id="email" type="text" placeholder="E-Mail">
+                            </div>
+                            <div>
+                                <label for="heard-about">How did you find out about us?</label>
+                                <select class="form-input" name="" id="heard-about">
+                                    <option value="">Please Pick One</option>
+                                    <option value="fb">Facebook</option>
+                                    <option value="X">X</option>
+                                    <option value="podcast">Podcast</option>
+                                    <option value="wordofmouth">Word of Mouth</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <button class="btn btn--form">Checkout</button>
+                        </form>
+                    </div>
+
+
+                    <div class="cta-img-box"><img src="img/gallery/cust8.webp" class="box-green-glow"></div>
+
+                </div>
+            </div>
+        </section>
+        <!-- FOOTER -->
+    </main>
+    <footer class="footer">
+        <div class="container grid grid-footer">
+
+            <div class="logo-col">
+                <a href="#" class="footer-logo">
+                    <img class="logo" src="img/nav-logo.webp" alt="atomiCoffee Logo" />
+                </a>
+                <ul class="social-links">
+                    <li><a class="footer-link" href="#"><ion-icon class="social-icon"
+                                name="logo-instagram"></ion-icon></a>
+                    </li>
+                    <li><a class="footer-link" href="#"><ion-icon class="social-icon"
+                                name="logo-facebook"></ion-icon></a>
+                    </li>
+                    <li><a class="footer-link" href="#"><ion-icon class="social-icon"
+                                name="logo-discord"></ion-icon></a>
+                    </li>
+                </ul>
+                <p class="copyright">Copyright &copy; <span class="year">2029</span> by AtomiCoffee, Inc</p>
+                <p class="copyright">All rights
+                    reserved</p>
+            </div>
+            <div class="address-col">
+                <p class="footer-heading">Contact Us</p>
+                <address class="contacts">
+                    <p class="address"><a href="https://maps.app.goo.gl/cUNiZx5dJsczHqKC9" class="footer-link">1700
+                            Peach St, Erie, PA
+                            16501</a>
+                    </p>
+                    <p><a class="footer-link" href="tel:415-201-6370">814-201-6370</a></p>
+                    <p><a class="footer-link" href="mailto:hello@atomicoffee.com">hello@atomicoffee.com</a></p>
+                </address>
+            </div>
+            <nav class="nav-col">
+                <p class="footer-heading">Account</p>
+                <ul class="footer-nav">
+                    <li><a class="footer-link" href="#">Create Account</a></li>
+                    <li><a class="footer-link" href="#">Sign In</a></li>
+                    <li><a class="footer-link" href="#">iOS App</a></li>
+                    <li><a class="footer-link" href="#">Android App</a></li>
+                </ul>
+            </nav>
+            <nav class="nav-col">
+                <p class="footer-heading">Company</p>
+                <ul class="footer-nav">
+                    <li><a class="footer-link" href="#">About AtomiCoffee</a></li>
+                    <li><a class="footer-link" href="#">For Business</a></li>
+                    <li><a class="footer-link" href="#">Careers</a></li>
+                </ul>
+            </nav>
+            <nav class="nav-col">
+                <p class="footer-heading">Resources</p>
+                <ul class="footer-nav">
+
+                    <li><a class="footer-link" href="#">Help center</a></li>
+                    <li><a class="footer-link" href="#">Privacy & terms</a></li>
+
+                </ul>
+            </nav>
+
+        </div>
+    </footer>
+    <!-- Script for using ionicons from https://ionic.io/ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- For safari -->
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+
+
+</body>
+
+</html>
